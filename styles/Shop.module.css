@@ -1,0 +1,128 @@
+.shopContainer {
+    background-color: #e7e5ff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .saloonShopStyling {
+    width: 226px;
+    height: 220px;
+  }
+  .removingDefaultStyles {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .removeLinkingStyles {
+    text-decoration: none;
+  }
+  .openSpanElement {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 8px;
+    color: #000000;
+  }
+  .distanceStyling {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 8px;
+  }
+  
+  .distanceStylingText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 8px;
+  }
+  .ulContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .removingDefaultStyles {
+      margin-right: 10px;
+    }
+  }
+  
+  .saloonButtonStyling {
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    padding-bottom: 8px;
+    border-width: 1px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 15px;
+    border-style: solid;
+    border-color: #9e0059;
+    background-color: #ffffff;
+    color: #9e0059;
+    margin-top: 15px;
+  }
+  .innerContainer {
+    display: flex;
+    margin-left: 30px;
+  }
+  @media screen and (max-width: 576px) {
+    .innerContainer {
+      flex-direction: column;
+      margin-left: 12px;
+    }
+  }
+  .headingUlContainer {
+    margin-left: 12px;
+  }
+  @media screen and (max-width: 576px) {
+    .headingUlContainer {
+      margin-left: 0px;
+    }
+  }
+  .rockHeading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .saloonShopStyling {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  
+  .shareIconStyling {
+    margin-right: 35px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .saloonShopStyling {
+      height: 150px;
+      width: 150px;
+    }
+    .rockHeading {
+      font-size: 18px;
+    }
+    .shareIconStyling {
+      margin-right: 10px;
+    }
+  }

@@ -1,0 +1,40 @@
+.buttonsStyling {
+    border-radius: 57px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    cursor: pointer;
+    font-size: normal;
+    font-weight: 700;
+    outline: none;
+    border-width: 0px;
+  }
+  .menuContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+  }
+  .buttonsStyling2 {
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 57px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    cursor: pointer;
+    outline: none;
+    font-size: normal;
+    font-weight: 700;
+    border-width: 0px;
+  }
+  .menuButtonsContainer {
+    background: #ffffff;
+    border: 1px solid #dddada;
+    border-bottom-right-radius: 57px;
+    padding: 3px;
+    border-top-right-radius: 57px;
+    border-bottom-left-radius: 57px;
+    border-top-left-radius: 57px;
+    width: auto;
+  }
