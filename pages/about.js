@@ -8,15 +8,20 @@ const About = () =>(
         <p className={AboutStyles.aboutParagraph}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut orci efficitur, placerat nisl nec, fermentum magna. Phasellus fermentum libero eu vehicula tincidunt. Quisque pulvinar commodo nunc, ac interdum nisl commodo eu.
         </p>
-      
-        
         <h1 className={AboutStyles.contactHeading}>Contact</h1>
         <div className={AboutStyles.buttonAndLocationAndAddressContainer}> 
         <div className={AboutStyles.locationAndAddressContainer}>
-        <GrLocation className={AboutStyles.locationIcon}/>
+        <img src='https://res.cloudinary.com/den2yh2w9/image/upload/v1660355961/Vector_egjngb.png' className={AboutStyles.locationIcon}/>
         <p className={AboutStyles.addressStyling}>Sahakar Nagar, Bangalore, 560000</p>
         </div>
-        <button type='button' className={AboutStyles.mapButton}>Map</button>
+        <a
+            href="https://www.justdial.com/Delhi/Rock-hair-dresser-Near-Mother-Dairy-Palam-Colony/011PXX11-XX11-161022160530-R1T1_BZDET"
+            target="_blank"
+            rel="noreferrer"
+          >
+             <button type='button' className={AboutStyles.mapButton}>Map</button>
+          </a>
+       
         </div>
         </div>
     </div>

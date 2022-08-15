@@ -7,13 +7,10 @@ import '../styles/globals.css'
 
 const  MyApp = ({ Component, pageProps }) => {
   return <>
-  
   <Header/>
   <ShopComponent/>
   <MenuComponent/>
   <Component {...pageProps} />
-  
-  
   </>
   
 }

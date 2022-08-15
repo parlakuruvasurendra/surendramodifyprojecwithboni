@@ -1,40 +1,40 @@
-import React from 'react'
-import {BiSearch} from 'react-icons/bi'
-import ProductsComponent from '../ProductDetailsComponent'
 import SearchStyles from '../../styles/Search.module.css'
+import {BiSearch} from 'react-icons/bi'
+import ProductDetailsComponent from '../ProductDetailsComponent'
+
 
 const productDetailsData = [
   {
     id: 1,
     imageUrl:
-      'https://res.cloudinary.com/den2yh2w9/image/upload/v1660341019/NicePng_carrot-png_143608_qrtdxb.png',
-    styleType: 'Carrot (1 Kg)',
-    price: 40,
+      'https://res.cloudinary.com/den2yh2w9/image/upload/v1660144921/David-Beckham-Hairstyle-5190_pvt9iy.png',
+    styleType: 'Haircut',
+    price: 400,
   },
   {
     id: 2,
     imageUrl:
-      'https://res.cloudinary.com/den2yh2w9/image/upload/v1660342956/71VeXcvlbYL._SX569__wagpai.jpg',
-    styleType: 'Organic tattva - Organic Wheat flour (..',
+      'https://res.cloudinary.com/den2yh2w9/image/upload/v1660146376/Dhoni_Image_krfuia.jpg',
+    styleType: 'Razor cut',
     price: 400,
   },
   {
     id: 3,
     imageUrl:
-      'https://res.cloudinary.com/den2yh2w9/image/upload/v1660343268/appleImage_nfx9dg.jpg',
-    styleType: 'Apples',
+      'https://res.cloudinary.com/den2yh2w9/image/upload/v1660146988/pexels-carlos-magno-7109735_u9murc.jpg',
+    styleType: 'Shaving',
     price: 50,
   },
   {
     id: 4,
     imageUrl:
-      'https://res.cloudinary.com/den2yh2w9/image/upload/v1660343579/eggtray_jnwwos.jpg',
-    styleType: 'Egg (1 dozen)',
+      'https://res.cloudinary.com/den2yh2w9/image/upload/v1660151790/Best_Short_Beard_Styles_For_Men_fgi7ch.jpg',
+    styleType: 'Beard Styling',
     price: 72,
   },
 ]
 
-const SearchComponent = () => (
+const SearchContainer = () => (
   <div>
     <div className={SearchStyles.searchContainer}>
       <div className={SearchStyles.inputAndSearchIconContainer}>
@@ -44,13 +44,14 @@ const SearchComponent = () => (
           placeholder="Search for Products or Services"
         />
         <BiSearch className={SearchStyles.searchIconStyling} />
-      </div> 
+      </div>
     </div>
     <ul className={SearchStyles.productsContainer}>
-    <ProductsComponent/>
+      {productDetailsData.map(eachItem => (
+        <ProductDetailsComponent key={eachItem.id} passingProductData={eachItem} />
+      ))}
     </ul>
   </div>
 )
 
-export default SearchComponent
-
+export default SearchContainer

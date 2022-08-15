@@ -17,7 +17,7 @@ const CartItemComponent = () => (
     modal
     trigger={
       <button type="button" className={CartStyles.cartButton2}>
-      <p className={CartStyles.items3}>CHECKOUT WITH 
+      <p className={CartStyles.items3}>BOOK WITH 
       <img
         src="https://res.cloudinary.com/den2yh2w9/image/upload/v1660357134/Vector_2_gad9lv.png"
         alt="binoLogo"
@@ -30,16 +30,14 @@ const CartItemComponent = () => (
     >
       {close =>(
           <div className={CartStyles.popupContainer}>
-          <button className={CartStyles.outerCloseButton} 
-          onClick={() => close()}>
-            <GrFormClose className={CartStyles.closeButton}/>
-          </button>
-          <img src="https://res.cloudinary.com/den2yh2w9/image/upload/v1660375232/Calendar_Collapsed_Light_calenderImage_w48fzp.png" alt="calenderImage" className={CartStyles.CalenderImageStyling}/>
-          <img src="https://res.cloudinary.com/den2yh2w9/image/upload/v1660375242/Frame_582timeImage_t4wpuw.png" alt="timerSlotBooking" className={CartStyles.setTimerBooking}/>
+            <button className={CartStyles.outerCloseButton} 
+              onClick={() => close()}>
+                <GrFormClose className={CartStyles.closeButton}/>
+              </button>  
+                <img src="https://res.cloudinary.com/den2yh2w9/image/upload/v1660375232/Calendar_Collapsed_Light_calenderImage_w48fzp.png" alt="calenderImage" className={CartStyles.CalenderImageStyling}/>              
+              <img src="https://res.cloudinary.com/den2yh2w9/image/upload/v1660375242/Frame_582timeImage_t4wpuw.png" alt="timerSlotBooking" className={CartStyles.setTimerBooking}/>
           </div>
-      )}
-    
-      
+      )} 
     </Popup>
 
   </div>

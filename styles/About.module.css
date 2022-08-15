@@ -8,13 +8,13 @@
     color: #000000;
 }
 .aboutParagraph{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 150%;
-letter-spacing: 0.001em;
-color: #6D6D6D;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.001em; 
+    color: #6D6D6D;  
 }
 @media screen and (max-width: 576px){
     .aboutParagraph{
@@ -36,10 +36,10 @@ color: #000000;
     border-width: 0px;
     cursor: pointer;
     outline: none;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-style: solid;
     background-color: black;
     font-family: 'Montserrat';
@@ -55,14 +55,13 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 24px;
+margin-left: 5px;
 color: #000000;
 }
 
 .locationIcon{
     height: 25px;
-    margin-right: 10px;
-    width: 25px;
-    color: #FF5B5B;
+    width: 20px;
 }
 
 .aboutContainer{
@@ -82,13 +81,13 @@ color: #000000;
     align-items: center;
 }
 .innerContainer{
-    width: 50vw;
+    width: 45vw;
     
 }
 @media screen and (max-width:576px){
     .innerContainer{
         width: 100vw;
-        padding: 15px;
+        padding: 16px;
     }
     .buttonAndLocationAndAddressContainer{
         flex-direction: column;
@@ -96,6 +95,12 @@ color: #000000;
     }
     .mapButton{
         margin-top: 15px;
+    }
+    
+}
+@media screen and (min-width:578px) and (max-width:992px){
+    .innerContainer{
+        width: 70vw;
     }
     
 }

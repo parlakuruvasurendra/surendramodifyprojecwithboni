@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['next.config.js'],
+  },
 }
 
 module.exports = nextConfig
